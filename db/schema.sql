@@ -26,6 +26,6 @@ empl_last VARCHAR(30) NOT NULL,
 empl_title VARCHAR(30) NOT NULL, FOREIGN KEY (empl_title) REFERENCES roles(title),
 empl_dep VARCHAR(30) NOT NULL, FOREIGN KEY (empl_dep) REFERENCES departments(dep_name),
 empl_sal INT NOT NULL, FOREIGN KEY (empl_sal) REFERENCES roles(salary),
-is_manager VARCHAR(30)
+manager VARCHAR(60)
 
 );

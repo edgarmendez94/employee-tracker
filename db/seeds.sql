@@ -18,15 +18,15 @@ VALUES  ("sales lead",100000),
         ;
 
 
-INSERT INTO employees(empl_first,empl_last)
-VALUES  ("Stephen","Curry",),
-        ("Andre","Iguodala",),
-        ("Klay","Thompson",),
-        ("Otto","Porter.Jr",),
-        ("Andrew","Wiggins",),
-        ("Jordan","Poole",),
-        ("Kevon","Looney",),
-        ("Draymond","Green",),
+INSERT INTO employees(empl_first,empl_last,manager)
+VALUES  ("Stephen","Curry",""),
+        ("Andre","Iguodala",""),
+        ("Klay","Thompson",""),
+        ("Otto","Porter.Jr","Stephen Curry"),
+        ("Andrew","Wiggins","Klay Thompson"),
+        ("Jordan","Poole","Andre Iguodala"),
+        ("Kevon","Looney","Draymond Green"),
+        ("Draymond","Green",""),
 
 
         ;
