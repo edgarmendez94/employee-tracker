@@ -13,7 +13,7 @@ dep_name VARCHAR(30) NOT NULL
 CREATE TABLE roles (
 role_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 title VARCHAR(30) NOT NULL,
-role_dep VARCHAR(30) NOT NULL,
+role_dep VARCHAR(30) NOT NULL, FOREIGN KEY (role_dep) REFERENCES departments(dep_name),
 salary INT NOT NULL
     
 );
