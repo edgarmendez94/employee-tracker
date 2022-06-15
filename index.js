@@ -52,12 +52,11 @@ inquirer
     // select * from departments;
 
 
-function getDepartments() {
-    db.query("select * from departments")
-    .then((results) => {
-        return results;
-    })
-}
+// function getDepartments() {
+//     const results =  await db.promise().query(`SELECT * FROM depatments`){
+       
+//     };
+// }
 
 // view all employees
     // select * from employees;
@@ -65,3 +64,22 @@ function getDepartments() {
 
 // view all roles
     // select * from roles;
+
+
+// Add employee
+    // INSERT INTO employees(empl_first,empl_last,manager,empl_role)
+    // VALUES
+
+
+// Update employee role
+    // 
+    // 
+
+// Add role
+    // 
+    // 
+
+// Add department
+    // 
+    // 
+    startApp();
