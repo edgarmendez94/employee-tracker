@@ -1,6 +1,18 @@
 const inquirer = require('inquirer');
 const mysql = require("mysql2");
 
+const db = mysql.createConnection(
+    {
+        host: "localhost",
+        user:"root",
+        password:"p4ssword",
+        database: "employee_db"
+    },
+    console.log("Database connected")
+);
+
+
+
 function startApp() {
 
 inquirer
@@ -48,38 +60,7 @@ inquirer
 
 
 
-// view all departments 
-    // select * from departments;
 
 
-// function getDepartments() {
-//     const results =  await db.promise().query(`SELECT * FROM depatments`){
-       
-//     };
-// }
 
-// view all employees
-    // select * from employees;
-
-
-// view all roles
-    // select * from roles;
-
-
-// Add employee
-    // INSERT INTO employees(empl_first,empl_last,manager,empl_role)
-    // VALUES
-
-
-// Update employee role
-    // 
-    // 
-
-// Add role
-    // 
-    // 
-
-// Add department
-    // 
-    // 
     startApp();
